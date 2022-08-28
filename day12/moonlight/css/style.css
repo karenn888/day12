@@ -1,0 +1,106 @@
+body{
+    background: linear-gradient(#2b1055, #7597de);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    height: 100vh;
+    position: relative;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 100000;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.nav-wrapper{
+    padding: 30px 0;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-wrapper a{
+    color: #fff;
+}
+
+.nav-list-item{
+    color: #fff;
+}
+
+#hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    display: flex; 
+    căn giữa chữ Moon light với explore */
+    overflow: hidden;
+ 
+}
+
+#hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover; 
+    /* object-fit: cover; -> thu nhỏ hình ko bị lệch */ 
+}
+
+#hero img#moon{
+    mix-blend-mode: screen;
+}
+
+#hero #text{
+    display: block;
+    position: absolute;
+    color: #fff;
+    transform: translateY(-35px);
+    font-size: 100px;
+    right: 0;
+}
+
+#hero #btn{
+    position: absolute;
+    color: #1c0522;
+    padding: 8px 30px;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+main{
+    background: #1c0522;
+    padding: 100px;
+}
+
+main .container p{
+    /* display: block; */
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
